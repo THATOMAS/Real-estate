@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React ,{useRef}from "react";
+import HomePage from "./routes/HomePage";
+import ViewHouses from "./routes/ViewHouses";
+import AboutUs from "./routes/AboutUs";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+const titleRef = useRef()
+const titleRef2 = useRef()
+const titleRef3 = useRef()
+
+const toBottom = ()=>{
+  titleRef2.current.scrollIntoView({behavior:'smooth'})
 }
+
+  return (
+    <main >
+    <section id='home-page-view' ref={titleRef}>
+      <HomePage toBottom={toBottom}/>
+    </section>
+
+    <section id='view-houses-view' ref={titleRef2}>
+      <ViewHouses />
+    </section>
+
+    <section id='about-us-view' ref={titleRef3}>
+      <AboutUs />
+    </section>
+
+    </main>
+  );
+};
 
 export default App;
