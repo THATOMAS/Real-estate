@@ -12,7 +12,7 @@ const HomePage = ({toBottom})=>{
           
       <div id='home-page-center'>
         <div id='home-page-center-info'>
-            <div id='available-houses'>
+            <div className='available-houses'>
             <p style={{color:'white',fontSize:'2em',textAlign:'center'}}>Available Houses</p>
             </div>
             <h1 style={{marginLeft:'0.5em',fontFamily: 'Montaga',fontWeight:'lighter',fontSize:'4em',color:'white'}}>We make dreams <br/>come true,<br/>give us a call. </h1>
