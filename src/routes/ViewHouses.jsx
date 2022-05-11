@@ -7,18 +7,19 @@ const centerPic = require('../assets/ViewHouses/centerPic.png')
 
 
 const ViewHouses = ({toTop,toBottom2})=>{
-document.body.style.background = '#071E28'
 
     return(
         <article id='view-houses-page'>
             <div id='view-houses-top-cursor'>
-                <div style={{height:'3em'
-                ,width:'7em' ,
+                <div style={{height:'4.1em'
+                ,width:'4em' ,
                 background:`url(${topCursor})`,
                 backgroundPosition:'center',
-                backgroundSize:'contain',
+                backgroundSize:'cover',
                 cursor:'pointer',
-                backgroundRepeat:'no-repeat'}}
+                backgroundRepeat:'no-repeat',
+                marginTop:'2em'
+            }}
                  onClick={toTop}>
                      
                  </div>
@@ -51,8 +52,7 @@ document.body.style.background = '#071E28'
                     <div style={{height:'75%',
                     width:'90%',
                     background:`url(${centerPic})`,
-                    
-                     backgroundRepeat:'no-repeat',
+                    backgroundRepeat:'no-repeat',
                      backgroundPosition:'center',
                      backgroundSize:'contain'
                 }}>
@@ -63,15 +63,17 @@ document.body.style.background = '#071E28'
 
             <div id='view-houses-bottom-cursor'>
                 
-                <div style={{height:'3em',
-                    width:'7em' ,
+                <div style={{height:'4.1em',
+                    width:'4em' ,
                     background:`url(${bottomCursor})`,
                     backgroundPosition:'center',
                     backgroundSize:'contain',
                     cursor:'pointer',
                      backgroundRepeat:'no-repeat',
                      backgroundPosition:'center',
-                     backgroundSize:'contain'
+                     backgroundSize:'cover',
+                     marginBottom:'2em'
+
                 }}
                     onClick={toBottom2}>
                 </div>

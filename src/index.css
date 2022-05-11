@@ -62,6 +62,7 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
   
 }
 
@@ -149,7 +150,9 @@ justify-content: flex-end;
   justify-content: center;
 }
 
-
+#view-houses-top-cursor:hover{
+  transform: scale(1.2);
+}
 
 
 #view-houses-center{
@@ -178,6 +181,11 @@ justify-content: flex-end;
   justify-content: center;
 }
 
+#view-houses-bottom-cursor:hover{
+  transform: scale(1.2);
+}
+
+
 #view-houses-center-photo{
   height: 90vh;
   width: 50vw;
@@ -186,4 +194,36 @@ justify-content: flex-end;
 align-items: center;
 justify-content: center;
 
+}
+
+/*About us Page*/
+
+#about-us-center{
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#about-us-top-cursor{
+  height: 10%;
+  width: 100%;
+  background:url('./assets/ViewHouses/topCursor.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+}
+
+#about-us-top-cursor:hover{
+  transform: scale(1.2);
+}
+#about-us-info-box{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
