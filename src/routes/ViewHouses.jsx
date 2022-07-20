@@ -1,4 +1,5 @@
 import React ,{useRef}from 'react'
+import {Link} from 'react-router-dom'
 
 const topCursor = require('../assets/ViewHouses/topCursor.png')
 
@@ -42,9 +43,9 @@ const ViewHouses = ({toTop,toBottom2})=>{
                     will help you find your dream home  .
                     </p>
 
-                    <div className='available-houses'>
+                    <Link to='/MarketPlace' className='available-houses' style={{textDecoration:'none',marginRight:'7em'}}>
                         <p style={{color:'white',fontSize:'2em',textAlign:'center'}}>Available Houses</p>
-                    </div>
+                    </Link>
                 
                 </div>
                 

@@ -30,30 +30,7 @@ code {
 
 
 /*The 3 landing page views*/
-#home-page-view{
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background: url('./assets/HomePage/background.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  scroll-snap-align: start;
-}
 
-#view-houses-view{
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 100vh;
-  scroll-snap-align: start;
-}
 
 #about-us-view{
   height: 100vh;
@@ -97,13 +74,14 @@ justify-content: flex-end;
   width: 20em;
   cursor: pointer;
   background: #B87333;
-  margin-left: 0.5em;
+  margin-left: 2.5em;
   margin-bottom: 1em;
   margin-top: 4em;
   border-radius:2em ;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .available-houses:hover{
@@ -206,24 +184,34 @@ justify-content: center;
 
 }
 
-#about-us-top-cursor{
+#about-us-top-cursor-box{
   height: 10%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-us-top-cursor-box:hover{
+transform: scale(1.2);}
+
+#about-us-top-cursor{
+  height: 4.1em;
+  width: 4em;
   background:url('./assets/ViewHouses/topCursor.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   cursor: pointer;
-
 }
 
-#about-us-top-cursor:hover{
-  transform: scale(1.2);
-}
 #about-us-info-box{
   height: 90%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
+  justify-content: flex-end;
 }
+
