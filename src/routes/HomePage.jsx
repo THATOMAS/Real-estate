@@ -46,6 +46,8 @@ const HomePageBottomPointerBox = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
+
+
 `
 
 const Pointer = styled.div`
@@ -55,7 +57,9 @@ margin-top :2em;
   background: url(${bottompointer});
   background-size: contain;
   background-repeat: no-repeat;
-  cursor: pointer;`
+  cursor: pointer;
+  &:hover{transform: scale(1.2)}
+  `
 
 const HomePage = ({toBottom})=>{
 
