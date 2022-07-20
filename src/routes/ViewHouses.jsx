@@ -87,6 +87,30 @@ background-position:center;
 background-size:contain
 `
 
+const ViewHousesBottomPointerBox = styled.div`
+height: 5vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+`
+
+const ViewHousesBottomPointer = styled.div`
+height:4.1em;                    
+width:4em;
+background: url(${bottomCursor});
+background-position:center;
+background-size:contain;
+cursor:pointer;
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+margin-bottom:2em
+
+
+`
+
 const ViewHouses = ({toTop,toBottom2})=>{
 
     return(
@@ -114,29 +138,12 @@ const ViewHouses = ({toTop,toBottom2})=>{
                 <ViewHousesCenterPhotoBox>
                     <ViewHousesCenterPhoto/>
                 </ViewHousesCenterPhotoBox>
-                </ViewHousesCenter>
+            </ViewHousesCenter>
             
 
-            <div id='view-houses-bottom-cursor'>
-                
-                <div style={{height:'4.1em',
-                    width:'4em' ,
-                    background:`url(${bottomCursor})`,
-                    backgroundPosition:'center',
-                    backgroundSize:'contain',
-                    cursor:'pointer',
-                     backgroundRepeat:'no-repeat',
-                     backgroundPosition:'center',
-                     backgroundSize:'cover',
-                     marginBottom:'2em'
-
-                }}
-                    onClick={toBottom2}>
-                </div>
-            
-            </div>
-        
-
+            <ViewHousesBottomPointerBox>   
+                <ViewHousesBottomPointer onClick={toBottom2}/>
+            </ViewHousesBottomPointerBox>
         </ViewHousesPage>
         
     )

@@ -1,9 +1,10 @@
 import React from 'react'
+import Navbar from "./Navbar"
 
 const MarketPlace = ()=>{
     return(
         <section id='market-place-view'>
-            <h1>Market Place Page</h1>
+            <Navbar/>
         </section>
     )
 }

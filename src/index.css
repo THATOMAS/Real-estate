@@ -38,72 +38,26 @@ code {
 }
 
 
-/*View Houses Page*/
-
-
-
-
-#view-houses-bottom-cursor{
-  height: 5vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Logo{
+  height:120px;
+width:120px;
+background:url("./assets/Logo.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+margin-left:10px;
 }
 
-#view-houses-bottom-cursor:hover{
-  transform: scale(1.2);
-}
+.PageLink{
 
-
-#view-houses-center-photo{
-  height: 90vh;
-  width: 50vw;
-  /*background: green;*/
-  display: flex;
-align-items: center;
-justify-content: center;
-
-}
-
-/*About us Page*/
-
-#about-us-center{
-  height: 80vh;
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
+font-family:Montaga;
+color:white;
+font-size:25px;
+font-weight:lighter;
+margin-left:30px;
+cursor:pointer;
+text-decoration:none;
+display: flex;
+align-self: center;
 
 }
-
-#about-us-top-cursor-box{
-  height: 10%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#about-us-top-cursor-box:hover{
-transform: scale(1.2);}
-
-#about-us-top-cursor{
-  height: 4.1em;
-  width: 4em;
-  background:url('./assets/ViewHouses/topCursor.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  cursor: pointer;
-}
-
-#about-us-info-box{
-  height: 90%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  justify-content: flex-end;
-}
-
