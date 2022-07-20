@@ -40,13 +40,13 @@ const notHovering = ()=>{
                 </p>
 
                 <div onMouseOver={hovering} onMouseLeave={notHovering} className='available-houses' style={{alignSelf:'center'}}>
-                <p style={{color:'white',fontSize:'3em'}}>{show ? <>Contact us</> : <>081 472 1948</>}</p>
+                <a href="https://thatodevelops.web.app/Hire-me" target="_blank" style={{color:'white',fontSize:'3em',textDecoration:"none"}}>{show ? <>Contact us</> : <>081 472 1948</>}</a>
                 </div>
 
             </div>
         </div>
 
-        <p style={{fontSize:'2em',color:'white' ,marginTop:'2.5em'}}>Created by <span style={{color:'#B87333',cursor:'pointer'}}>Thato Mashori. </span> </p>
+        <p style={{fontSize:'2em',color:'white' ,marginTop:'2.5em'}}>Created by <a href="https://thatodevelops.web.app" target="_blank" style={{color:'#B87333',cursor:'pointer'}}>Thato Mashori. </a> </p>
         </article>
         
     )
