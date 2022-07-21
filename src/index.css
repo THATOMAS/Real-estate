@@ -39,13 +39,12 @@ code {
 
 
 .Logo{
-  height:120px;
-width:120px;
+  height:80%;
+width:15%;
 background:url("./assets/Logo.png");
 background-size:contain;
 background-repeat:no-repeat;
 background-position:center;
-margin-left:10px;
 }
 
 .PageLink{

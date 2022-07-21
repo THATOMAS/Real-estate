@@ -5,21 +5,21 @@ import {Link,Outlet} from "react-router-dom"
 const logoimage = require("../assets/Logo.png")
 
 const NavbarContainer = styled.div`
-height:15vh;
+height:10vh;
 width:100vw;
 background:#071E28;
 display:flex;
 align-items:center;
-justify-content:space-around
+justify-content:space-between
 `
 
 const PageLinks = styled.div`
 height:50%;
-width:90%;
+width:70%;
 display:flex;
 justify-content:flex-end;
 align-items:flex-start;
-
+margin-right:20px;
 `
 
 const Number = styled.p`
@@ -39,9 +39,9 @@ const Navbar = ()=>{
 			<NavbarContainer>
 				<Link to="/" className="Logo"/>
 				<PageLinks>
-					
-					<Link to="/MarketPlace" className="PageLink">For Sale</Link>
-					<Link to="/MarketPlace/ForRent" className="PageLink">For Rent</Link>
+					<Link to="/" className="PageLink">Home</Link>
+					<Link to="/MarketPlace" className="PageLink">onSale</Link>
+					<Link to="/MarketPlace/ForRent" className="PageLink">toRent</Link>
 					<Link to="/MarketPlace/Developments" className="PageLink">Developments</Link>
 					
 					<Number> +27 97 554 9900</Number>

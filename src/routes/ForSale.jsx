@@ -1,10 +1,18 @@
 import React from 'react'
+import Header from "./Header"
+import styled from "styled-components"
+
+
+const ForSalePage = styled.section`
+height:150vh;
+`
+
 
 const ForSale = ()=>{
     return(
-        <section id='market-place-view' >
-            <h1>For Sale Place Page</h1>
-        </section>
+        <ForSalePage>
+            <Header/>
+        </ForSalePage>
     )
 }
 

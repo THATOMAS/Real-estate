@@ -93,7 +93,9 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-
+&:hover{
+    transform:scale(1.2)
+}
 `
 
 const ViewHousesBottomPointer = styled.div`
