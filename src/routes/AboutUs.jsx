@@ -76,8 +76,6 @@ align-items:flex-end;
 justify-content:center;
 flex-direction:column
 
-
-
 `
 
 const LinkTo = styled.a`

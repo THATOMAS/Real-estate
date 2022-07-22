@@ -3,7 +3,6 @@ import styled from "styled-components"
 
 const searchIcon = require("../assets/MarketPlace/searchIcon.png")
 
-
 const SearchBarBox = styled.section`
 height:25vh;
 width:100vw;

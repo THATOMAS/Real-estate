@@ -1,10 +1,10 @@
-import React from "react"
+import React ,{useState}from "react"
 import styled from "styled-components"
 import {Link,Outlet} from "react-router-dom"
 
 const logoimage = require("../assets/Logo.png")
 
-const NavbarContainer = styled.div`
+const NavbarContainer = styled.section`
 height:10vh;
 width:100vw;
 background:#071E28;
@@ -40,14 +40,11 @@ const Navbar = ()=>{
 				<Link to="/" className="Logo"/>
 				<PageLinks>
 					<Link to="/" className="PageLink">Home</Link>
-					<Link to="/MarketPlace" className="PageLink">onSale</Link>
-					<Link to="/MarketPlace/ForRent" className="PageLink">toRent</Link>
-					<Link to="/MarketPlace/Developments" className="PageLink">Developments</Link>
-					
+					<Link to="/MarketPlace" className="PageLink">Market</Link>
+					<Link to="/News" className="PageLink">News</Link>
 					<Number> +27 97 554 9900</Number>
 				</PageLinks>
 			</NavbarContainer>
-			<Outlet/>
 		</article>
 		)
 }
