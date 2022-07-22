@@ -2,26 +2,27 @@ import React from "react"
 import styled from "styled-components"
 
 const searchIcon = require("../assets/MarketPlace/searchIcon.png")
-const close = require("../assets/MarketPlace/close.png")
 
 
-const HeaderContainer = styled.article`
-height:18vh;
+const SearchBarBox = styled.section`
+height:25vh;
 width:100vw;
 background:#E7E7E7;
 display:flex;
 flex-direction:column;
-justify-content:flex-end;
+justify-content:flex-start;
 align-items:center;
-`
 
+
+`
 
 const Heading = styled.h1`
 font-family:Montaga;
 color:black;
 font-size:30px;
 font-weight:lighter;
-margin-bottom:5px
+margin-bottom:5px;
+margin-top:5px;
 `
 
 const Form = styled.form`
@@ -51,21 +52,23 @@ cursor:pointer;
 `
 
 const PreferencesBox = styled.div`
-height:60%;
-width:100vw;
+width:70vw;
 // background:red;
 display:flex;
 align-items:center;
 justify-content:space-around;
+margin-bottom:10px;
 `
 
 const SinglePreferenceBox = styled.div`
-height:70px;
-width:200px;
+height:90px;
+width:150px;
 // background:blue;
 display:flex;
 flex-direction:column;
 align-items:center;
+text-align:center;
+// background:green
 `
 
 
@@ -73,7 +76,7 @@ const Label = styled.label`
 font-family:Montaga;
 color:black;
 font-size:25px;
-height:40%;
+height:60%;
 width:100%;
 // background:green;
 display:flex;
@@ -83,7 +86,7 @@ justify-content:center;
 `
 
 const Select = styled.select`
-height:60%;
+height:40%;
 width:100%;
 // background:yellow;
 display:flex;
@@ -107,10 +110,31 @@ background:white;
 }
 `
 
-const Header = ()=>{
-	return(<HeaderContainer>
+const FilterButton = styled.button`
+max-height:200px;
+width:200px;
+font-family:Sans serif;
+background:#21463C;
+border:none;
+margin-bottom:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:Sans-serif;
+font-size:2em;
+color:white;
+border-radius:5px;
+cursor:pointer;
+`
 
-			<Heading>Find your dream property here</Heading>
+
+
+const SearchBar = ()=>{
+	return(
+
+
+			<SearchBarBox>
+				<Heading>Find your dream property here</Heading>
 			<Form >
 				<Input type="text" name="search" />
 				<Button type="submit"/>
@@ -164,8 +188,12 @@ const Header = ()=>{
 							
 
 		</PreferencesBox>
-
-	</HeaderContainer>)
+			<FilterButton type="submit">Filter Items
+			</FilterButton>
+			
+	</SearchBarBox>
+		)
 }
 
-export default Header;
+
+export default SearchBar;

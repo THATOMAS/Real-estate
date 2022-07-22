@@ -1,9 +1,10 @@
 import React from 'react'
+import CenterPage from "./CenterPage"
 
 const Developments= ()=>{
     return(
         <section id='market-place-view'>
-            <h1>Developments Place Page</h1>
+            <CenterPage/>
         </section>
     )
 }
