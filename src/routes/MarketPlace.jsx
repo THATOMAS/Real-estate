@@ -1,4 +1,4 @@
-import React,{useState}from 'react'
+import React,{useState,useEffect}from 'react'
 import Navbar from "./Navbar"
 import SearchBar from "./SearchBar"
 import Filtered from "./Filtered"
@@ -20,11 +20,8 @@ flex-direction:column
 
 const MarketPlace = ()=>{
 
-const [houses,setHouses] = useState(data)  
+const [houses,setHouses] = useState(data)
 
-// const FilterItems = ()=>{
-
-// }  
 
     return(
         <MarketPlaceView>
