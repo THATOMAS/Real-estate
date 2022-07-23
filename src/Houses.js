@@ -11,6 +11,7 @@ const Data = [
       PostAdress: "2690",
     },
     bedrooms: "4",
+    type:"Town House",
     img: require("./assets/Houses/one.jpg"),
   },
   {
@@ -24,12 +25,13 @@ const Data = [
       State: "Northen Cape",
       PostAdress: "2691",
     },
+    type:"Farm House",
     bedrooms: "6",
     img: require("./assets/Houses/two.jpg"),
   },
   {
     id: 3,
-    name: "Die Plaas Huis",
+    name: "North Coast Apartment",
     price: "2 560 000",
     info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci at facere. Quisquam itaque, delectus vero tempora ut aliquam odio.`,
     location: {
@@ -39,6 +41,7 @@ const Data = [
       PostAdress: "1733",
     },
     bedrooms: "3",
+    type:"Apartment",
     img: require("./assets/Houses/three.jpg"),
   },
   {
@@ -52,13 +55,14 @@ const Data = [
       State: "Vasily",
       PostAdress: "1290",
     },
-    bedrooms: "10",
+    bedrooms: "4",
+    type:"Farm House",
     img: require("./assets/Houses/four.jpg"),
   },
   {
     id: 5,
     name: "Fairwell",
-    price: "1 200 000",
+    price: "6 200 000",
     info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci at facere. Quisquam itaque, delectus vero tempora ut aliquam odio.`,
     location: {
       City: "Texas",
@@ -67,6 +71,7 @@ const Data = [
       PostAdress: "4590",
     },
     bedrooms: "3",
+    type:"Farm House",
     img: require("./assets/Houses/five.jpg"),
   },
 
@@ -81,7 +86,8 @@ const Data = [
       State: "New York",
       PostAdress: "0001",
     },
-    bedrooms: "5",
+    bedrooms: "3",
+    type:"Town House",
     img: require("./assets/Houses/six.jpg"),
   },
   {
@@ -95,7 +101,8 @@ const Data = [
       State: "Paplo",
       PostAdress: "2290",
     },
-    bedrooms: "2",
+    bedrooms: "6",
+    type:"Farm House",
     img: require("./assets/Houses/seven.jpg"),
   },
   {
@@ -109,7 +116,8 @@ const Data = [
       State: "Gauteng",
       PostAdress: "8326",
     },
-    bedrooms: "6",
+    bedrooms: "3",
+    type:"Farm House",
     img: require("./assets/Houses/one.jpg"),
   },
 ];

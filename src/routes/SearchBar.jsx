@@ -95,7 +95,7 @@ background:none;
 text-align:center;
 font-family:Montaga;
 color:black;
-font-size:25px;
+font-size:22px;
 background:white;
 `
 const Option = styled.option`
@@ -143,27 +143,27 @@ const SearchBar = ()=>{
 			<SinglePreferenceBox>
 				<Label>Property type:</Label>
 				<Select >
-					<Option>Houses</Option>
-					<Option>Apartments</Option>
-					<Option>Commune</Option>		
+					<Option>Town House</Option>
+					<Option>Farm House</Option>
+					<Option>Apartments</Option>		
 				</Select>
 			</SinglePreferenceBox>
 							
 			<SinglePreferenceBox>
-				<Label>Max price:</Label>
+				<Label>Max price (R):</Label>
 				<Select >
-					<Option>R 4 m</Option>
-					<Option>R 5 m</Option>
-					<Option>R 6 m</Option>		
+					<Option>4 m</Option>
+					<Option>5 m</Option>
+					<Option>6 m</Option>		
 				</Select>
 			</SinglePreferenceBox>
 							
 			<SinglePreferenceBox>
-				<Label>Min price:</Label>
+				<Label>Min price (R):</Label>
 				<Select >
-					<Option>R 600 K</Option>
-					<Option>R 500 K</Option>
-					<Option>R 400 K</Option>		
+					<Option>600 K</Option>
+					<Option>500 K</Option>
+					<Option>400 K</Option>		
 				</Select>
 
 

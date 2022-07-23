@@ -22,11 +22,10 @@ const MarketPlace = ()=>{
 
 const [houses,setHouses] = useState(data)
 
-
     return(
         <MarketPlaceView>
             <Navbar/>
-            <SearchBar/>
+            <SearchBar />
             <Filtered houses={houses}/>
             <Footer/>
         </MarketPlaceView>
